@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-70px); }
+}
+@keyframes scroll-right {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(70px); }
+}
+.animate-scroll-left {
+  animation: scroll-left 0.1s;
+}
+.animate-scroll-right {
+  animation: scroll-right 0.1s;
+}
